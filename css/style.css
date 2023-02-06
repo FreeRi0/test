@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 1140px;
+  margin: 0px auto;
+}
+
+.header {
+  padding: 50px 0px 50px 0px;
+  background-color: #2c0031;
+  color: white;
+}
+
+.header img {
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__info {
+  margin-left: 80px;
+}
+
+.name {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.header__text {
+  font-size: 20px;
+}
+
+.objective {
+  padding: 50px 0px 70px 0px;
+}
+
+.objective__descr {
+  font-size: 16px;
+  margin: 25px 0px 25px 0px;
+}
+
+.experience__title{
+  margin-bottom: 30px;
+}
+
+.experience_heading{
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 23px;
+  color: #670464;
+
+  padding-top: 80px;
+  padding-bottom: 25px;
+}
+
+
+.experience_wrapper{
+  display: flex;
+}
+
+
+.experience_text{
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #670464;
+
+  padding-right: 92px;
+}
+
+.experience_content{
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #670464;
+
+  padding-left: 179px;
+}
+
+.ex__head{
+  padding-left: 16px;
+}
+
+
+.Skills {
+padding: 40px 0px 70px 0px;
+}
+
+
+.skills__title {
+  margin-bottom: 30px;
+}
+
+.Language{
+  padding-bottom: 70px;
+}
+
+.language__title {
+margin-bottom: 20px;
+}
+
+.languages {
+  list-style-image: url('../img/Rectangle.jpg');
+  margin-left: 18px;
+}
+
+.languages__item {
+  margin-bottom: 10px;
+}
+
+.form{
+  background-color:
+#a47f10;
+
+  padding-bottom: 50px;
+}
+
+.form_container{
+  display: flex;
+  justify-content: center;
+}
+
+.form_heading{
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 23px;
+  color: #670464;
+
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 11px;
+}
+
+.form_title{
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3F313F;
+}
+
+
+.form_input{
+  width: 366px;
+  border: 5px solid #BEB1AE;
+  border-top: none ;
+  border-left: none;
+  border-right: none;
+  background-color:#E5D6D2;
+  font-weight: bold;
+  resize: none;
+}
+
+.area_wrapper{
+display: flex;
+justify-content: center;
+}
+
+
+.form_textarea{
+  width: 736px;
+  border: 5px solid #BEB1AE;
+  border-top: none ;
+  border-left: none;
+  border-right: none;
+  background-color:#E5D6D2;
+  font-weight: bold;
+  resize: none;
+}
+
+
+.form_bnt{
+  width: 168px;
+  height: 40.28px;
+  background: #2c0031;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.form_bnt:hover{
+  background-color: #670464;
+  transition: all 0.4s ease-in;
+
+}
+
+
+.Contacts {
+  color: white;
+  padding: 10px 0px 30px 0px;
+  background-color: #2c0031;
+}
+
+.contacts__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.contactss {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.contacts__item a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  padding-bottom: 15px;
+  background-color: #2c0031;
+}
+
+.footer__text {
+  text-align: center;
+  color: white;
+  opacity: 30%;
+}
