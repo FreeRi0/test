@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--1. нейминг файлов(вместо index my-page.html - UserPage.html, так же и css)
+2. Структура, ее я кину на гитхаб
+3.  -->
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Подключаем шрифты Akrobat -->
+   <link rel="stylesheet" href="/static/fonts/akrobat/otf/stylesheet.css">
+   <link rel="stylesheet" href="/static/fonts/akrobat/ttf/stylesheet.css">
+   <link rel="stylesheet" href="/static/fonts/akrobat/web/stylesheet.css">
+   <!-- Подключаем шрифты BertSans -->
+   <link rel="stylesheet" href="/static/fonts/bertsans/stylesheet.css">
+   <!-- Подключаем шрифт Font Awesome для иконок -->
+   <link rel="stylesheet" href="/static/fontawesome/fontawesome-free-6.4.2-web/css/all.css">
+   <!-- Подключаем стили -->
+   <link rel="stylesheet" href="../static/css/UserPage.css">
+   <title>Моя страница</title>
+</head>
+
+<body>
+   <!-- кнопки перехода страниц tabs -->
+   <section class="tabs__menu">
+      <div class="container">
+         <nav class="nav__tabs">
+            <ul class="tabs__menu-nav">
+               <li class="tabs__menu-link"><a href="#">Моя страница</a></li>
+               <li class="tabs__menu-link"><a href="#">Персональные данные</a></li>
+               <li class="tabs__menu-link"><a href="#">Логин и пароль</a></li>
+               <li class="tabs__menu-link"><a href="#">Настройки приватности</a></li>
+            </ul>
+         </nav>
+      </div>
+
+   </section>
+   <!-- Раздел ввода данных о себе -->
+   <section class="about-user"> <!--лучше навать что то связанное с пользователем, about-user-->
+      <div class="container">
+         <div class="about-user__wraper">
+            <div class="about-user_title">
+               <h3 class="about-user_heading">Кратко о себе</h3>
+               <!-- ввод текста о себе -->
+               <div class="about-user__textarea">
+                  <textarea name="text"
+                     placeholder="Я медик, увлекаюсь изучением человеческого организма и медицинскими технологиями. Активно участвую в общественной жизни университета, организуя предлагаемые мероприятия и проводя просветительскую работу среди студентов. Одно из моих увлечений - работа в студенческом отряде, где я получаю опыт врачебной практики и помогаю нуждающимся людям."
+                     id="#" cols="400" rows="4"></textarea>
+                  <i class="fa-regular wrapper__fa-circle-xmark fa-circle-xmark"></i>
+               </div>
+               <div class="about-user__counter">
+                  341/400
+               </div>
+            </div>
+            <div class="about-user__btn">
+               <button class="about-user__save" type="submit"><a href="#">Сохранить</a></button>
+            </div>
+            <!-- раздел с фотографиями -->
+            <div class="about-user photos">
+               <div class="about-user-photos__title">
+                  <h3 class="about-user-photos__heading">Мои фото</h3>
+                  <div class="about-user-photos__wrap">
+                     <!-- 4 фото -->
+                     <div class="about-user-photos__img">
+                        <img src="../static/images/img/guitar player1.png" alt="парень с гитарой">
+                     </div>
+                     <div class="about-user-photos__img">
+                        <img src="../static/images/img/guitar player2.png" alt="девушка на фоне цветов">
+                     </div>
+                     <div class="about-user-photos__img">
+                        <img src="../static/images/img/guitar player3.png"
+                           alt="белокурая девушка на фоне людей с яблоками">
+                     </div>
+                     <div class="about-user-photos__img">
+                        <img src="../static/images/img/guitar player4.png"
+                           alt="две девушки, одна из них держит блокнот">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__wrapper">
+            <div class="footer__wrap">
+               <div class="wrap__img">
+                  <div class="footer__logo">
+                     <img class="footer__img-logo" src="../static/images/img/Лого_футер.png" alt="Логотип">
+                  </div>
+                  <div class="footer__link">
+                     <a class="footer__img" href="#"> <img src="..//static/images/img/logo vk whit footer.png"
+                           alt="logo-vk"></a>
+                     <a class="footer__img" href="#"> <img src="../static/images/img/logo telegram footer.png"
+                           alt="telegram-logo"></a>
+                  </div>
+               </div>
+               <div class="footer__wrap-contacts">
+                  <div class="footer__address">
+                     <p class="footer__address-p">105005, г. Москва,</p>
+                     <p class="footer__address-p">Лефортовский переулок, 8,</p>
+                     <p class="footer__address-p">строение 1</p>
+                  </div>
+
+
+                  <div class="footer__contacts">
+                     <a href="tel:+84992613345">8 499 261 33 45</a>
+                     <p class="footer__contacts-p">Горячая линия РСО:</p>
+                     <a href="tel:+88007700117">8 800 770 0 117</a>
+
+                     <p class="footer__contacts-p"><a class="link-a" href="mailto:mail@r.s.0@mail.ru">r.s.o@mail.ru</a>
+                     </p>
+
+                  </div>
+
+
+                  <div class="footer__policy">
+                     <a href="#">Политика конфиденциальности</a>
+                     <a href="#">Пользовательское соглашение</a>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="footer__info-wrap">
+               <div class="footer__copyright">
+                  <p class="footer__copyright-p">&copy;1959-2023 Российские студенческие отряды.</p>
+                  <p class="footer__copyright-p">Все права защищены.</p>
+               </div>
+               <div class="footer__developed">
+                  <p class="footer__developed-p">Сделано в</p>
+
+                  <img class="footer__developed-logo" src="../static/images/img/logo 1t club footer.png" alt="логотип-1t">
+      
+                  <p class="footer__developed-p">teamcode</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
