@@ -1,0 +1,497 @@
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   box-sizing: border-box;
+}
+
+*,
+* ::before,
+*::after {
+   box-sizing: inherit;
+}
+
+/* говорим тегу img будешь блочным тегом.
+Указываем максимальную ширину    max-width: 100%; - если экран будет меньше самой картинки то картинка будет сжиматься. */
+img {
+   display: block;
+   max-width: 100%;
+}
+
+a {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   color: var(--unnamed);
+   display: block;
+}
+
+button {
+   border: none;
+}
+
+/* убираем все падинги и марджины которые установлены по умолчанию */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   padding: 0;
+   margin: 0;
+}
+
+/* Sans-serif делает шрифт без засечек, указываем по умолчанию настройки: обнуление отступов, шрифт и его начертание */
+body {
+   margin: 0;
+   font-family: 'Akrobat', sans-serif;
+   font-family: 'Bert-Sans', sans-serif;
+}
+
+/* указываем размер контейнера и позиционируем по центру с помощью margin:0; */
+:root {
+   --sub-text-p: #5E5C5C;
+   --sub-text-h: #35383F;
+   --unnamed: #1C5C94;
+   --white: #fff;
+   --button: #39BFBF;
+   --border: 1px solid rgba(0, 0, 0, 0.10);
+
+}
+
+/********** меню таб ***********/
+
+.container {
+   max-width: 1180px;
+   margin: 0 auto;
+
+}
+
+.tabs__menu {
+   padding-top: 40px;
+   margin-bottom: 40px;
+}
+
+
+.tabs__menu-nav {
+   display: flex;
+   background-color: #fff;
+   list-style-type: none;
+   text-align: center;
+}
+
+.tabs__menu-link {
+   text-decoration: none;
+   text-align: center;
+   color: #1C5C94;
+   letter-spacing: 0.02em;
+   font-family: 'Bert-Sans', sans-serif;
+   font-size: 20px;
+   font-weight: 500;
+   border: 2px solid #1C5C94;
+   padding: 8px 22px;
+   border-radius: 30px;
+   text-align: center;
+   min-height: 36px;
+   margin-right: 20px;
+}
+
+.tabs__menu-nav li:active {
+   background-color: #1C5C94;
+}
+
+.tabs__menu-nav a:active {
+   color: #fff;
+}
+
+
+/******************* конец меню таб******** **/
+
+/* ****************Блок about*************** */
+
+.about-user_title {
+   min-height: 230px;
+   margin: 0;
+   padding: 40px 40px 16px 40px;
+}
+
+.about-user_heading {
+   color: #35383F;
+   font-family: 'Akrobat', sans-serif;
+   font-style: normal;
+   color: #35383F;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 28px;
+   margin-bottom: 20px;
+}
+
+.about-user__wraper {
+   border-radius: 10px;
+   margin-bottom: 80px;
+   border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.about-user__counter {
+   color: #898989;
+   font-family: 'Verdana', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.about-user__btn {
+   margin-left: 374.5px;
+}
+
+.about-user__btn a {
+   color: #FFF;
+}
+
+.about-user__save {
+   padding: 16px 32px;
+   align-items: center;
+   border-radius: 10px;
+   background: #39BFBF;
+   font-family: 'Bert Sans', sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   cursor: pointer;
+
+}
+
+/* раздел поля ввода текста */
+
+.about-user__textarea {
+   border: rgba(0, 0, 0, 0.10);
+   border-radius: 10px;
+   max-width: 820px;
+   min-height: 116px;
+   display: flex;
+   padding-bottom: 16px;
+}
+
+/* удаляет полосу прокрутки и обводку    resize: none; не дает двигаться*/
+textarea {
+   outline: none;
+   overflow: hidden;
+   padding: 16px 60px 26px 16px;
+   text-align: left;
+   resize: none;
+   border-radius: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.10);
+   background: #FFF;
+}
+
+::placeholder {
+   color: #5E5C5C;
+   font-family: 'Bert-Sans', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: normal;
+   text-align: left;
+   max-width: 744px;
+   height: 84px;
+
+}
+
+/*  иконки i*/
+.wrapper__fa-circle-xmark {
+   position: relative;
+   font-size: 24px;
+   color: #898989;
+   cursor: pointer;
+   padding-top: 17px;
+
+}
+
+.about-user__textarea {
+   position: relative;
+   width: 100%;
+   align-items: center;
+}
+
+.about-user__textarea i {
+   position: absolute;
+   right: 16px;
+   top: 25px;
+   transform: translateY(-50%);
+
+}
+
+/************************     конец раздела about-user     ***********************/
+
+/************************     раздел  my-foto     *********************************************** */
+
+
+
+
+.about-user-photos__title {
+   margin: 40px;
+}
+
+.about-user-photos__heading {
+   margin-bottom: 20px;
+   color: var(--sub-text-h);
+   font-family: 'Akrobat', sans-serif;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 28px;
+}
+
+.about-user-photos__wrap {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+}
+
+/* -*************************    конец раздела мое фото        ********************** */
+
+/* **************************   раздел footer               ************************ */
+
+.footer {
+   background-color: #1C5C94;
+   height: 292px;
+   padding-top: 48px;
+   padding-bottom: 31px;
+}
+
+.footer__wrap {
+   display: flex;
+
+}
+
+.wrap__img {
+   width: 80px;
+   min-height: 132px;
+   margin-right: 120px;
+}
+
+.footer__logo {
+   margin-bottom: 32px;
+}
+
+.footer__link {
+   display: flex;
+   margin-bottom: 49px;
+}
+
+.footer__img {
+   margin-right: 12px;
+}
+
+.footer__img:last-child {
+   margin: 0;
+}
+.footer__address p{
+margin-bottom: 8px;
+}
+.footer__address,
+.footer__contacts {
+   color: #FFF;
+   font-family: 'Bert-Sans', sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20px;
+   padding-top: 12px;
+  
+
+}
+
+.footer__policy,
+.footer__copyright,
+.footer__developed {
+   font-family: 'Bert-Sans', sans-serif;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: 0.02em;
+
+}
+.footer__policy a{
+   font-family: 'Bert-Sans', sans-serif;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: 0.02em;
+}
+.footer__contacts a  {
+   color: #fff;
+   font-family: 'Bert-Sans', sans-serif;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: 0.02em;
+ 
+}
+.link-a{
+   text-decoration:underline;
+}
+
+.footer__policy {
+   padding-top: 12px;
+}
+.footer__contacts a{
+padding-bottom: 8px;
+}
+.footer__contacts p{
+   padding-bottom: 8px;
+   }
+.footer__policy a{
+padding-bottom: 8px;
+}
+.footer__copyright-p,
+.footer__developed-p {
+   text-transform: uppercase;
+   margin-bottom: 8px;
+}
+
+.footer__copyright-p:last-child {
+   text-transform: none;
+}
+
+.footer__wrap-contacts {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer__address {
+   padding-right: 120px;
+   height: 60px;
+}
+
+.footer__contacts {
+   padding-right: 88px;
+   height: 92px;
+}
+
+.footer__policy {
+   height: 36px;
+}
+
+.link-a {
+   color: #fff;
+}
+
+.footer__info-wrap {
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+
+/*не должно быть неиспользуемых классов и если они не используются, то зачем их осталять еще и в html*/
+
+.footer__developed {
+   display: flex;
+   align-items: center;
+   margin-right: 107px;
+   padding-bottom: 8px;
+}
+
+.footer__developed-p {
+   margin-right: 4px;
+   font-weight: 500;
+}
+
+.footer__developed-p:last-child {
+   margin-right: 0px;
+}
+
+.footer__developed-p:first-child {
+   text-transform: none;
+}
+
+.footer__developed-logo {
+   padding-left: 12px;
+   width: 108px;
+   height: 36px;
+}
+
+/* адаптив я желательно бы вынес в отдельный файл */
+
+@media screen and (max-width: 1240px) {
+   .footer {
+      padding: 40px 60px;
+   }
+
+   .footer__wrap {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .footer__developed {
+      margin-right: 0;
+   }
+}
+
+@media screen and (max-width: 1027px) {
+   .footer {
+      padding: 40px 50px;
+   }
+
+   .wrap__img {
+      margin-right: 76px;
+   }
+
+   .footer__address,
+   .footer__contacts,
+   .footer__policy {
+      font-size: 14px;
+   }
+
+   .footer__address,
+   .footer__contacts {
+      padding-right: 68px;
+   }
+}
+
+@media screen and (max-width: 923px) {
+   .footer {
+      padding: 40px 34px;
+   }
+
+   .wrap__img {
+      margin-right: 66px;
+   }
+
+   .footer__address,
+   .footer__contacts {
+      padding-right: 56px;
+   }
+}
+
+@media screen and (max-width: 856px) {
+   .footer {
+      padding: 40px 34px;
+   }
+
+   .wrap__img {
+      margin-right: 56px;
+   }
+
+   .footer__address,
+   .footer__contacts {
+      padding-right: 46px;
+   }
+}
+
+@media screen and (max-width: 846px) {
+   .footer {
+      padding: 40px 34px;
+   }
+
+   .wrap__img {
+      margin-right: 36px;
+   }
+
+   .footer__address,
+   .footer__contacts {
+      padding-right: 32px;
+   }
+}
